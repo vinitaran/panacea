@@ -1,0 +1,60 @@
+@import"variables";
+@import"mixins";
+
+
+.logo__body{
+         margin:10px;    
+div{
+    border-radius:$playgroundBorder;
+}
+  
+  
+  #logo_semi_0{
+    background-color:$flagColor1;
+    width:calc(10px* 10);
+    height:calc(10px * 5);
+    position:absolute;
+    left:calc(10px * 4);
+    top:calc(10px * 4);
+    
+  }
+  #logo_semi_1{
+    background-color:$flagColor2;
+    width:calc(10px* 8);
+    height:calc(10px * 4);
+    position:absolute;
+    left:calc(10px * 5);
+    top:calc(10px * 5);
+  
+  }
+  #logo_semi_3{
+    background-color:$flagColor3;
+    width:calc(10px* 6);
+    height:calc(10px * 3);
+    position:absolute;
+    left:calc(10px * 6);
+    top:calc(10px * 6);
+   
+  }
+  #logo_semi_4{
+    width: calc(10px *4);
+    height:calc(10px * 2);
+    position:absolute;
+    background-color:$flagColor4;
+    left: calc(10px *7);
+    top: calc(10px * 7);
+  
+    
+  }
+  #logo_semi_5{
+    width: calc(10px *2);
+    height:calc(10px );
+    position:absolute;
+    background-color:$flagColor5;
+    left: calc(10px *8);
+    top: calc(10px * 8);
+   
+  }
+}
+
+  
