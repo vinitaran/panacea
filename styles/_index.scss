@@ -5,7 +5,7 @@
 .mainBody{
     margin: 0;
     padding: 0;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     background-color:$flagColor1;
     background-image:linear-gradient(to bottom,
@@ -13,6 +13,6 @@
     $flagColor2,
     $flagColor3,
     $flagColor4,
-    $flagColor5,
+    
     );
 }
