@@ -1,10 +1,15 @@
 @import"variables";
 @import"mixins";
-
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
+body{
+    margin: 0px;
+}
 
 .mainBody{
-    margin: 0;
-    padding: 0;
+    @include flexPosition();
+    position:absolute;
+    z-index: 1;
+     margin: 0px;
     width: 100vw;
     height: 100vh;
     background-color:$flagColor1;
@@ -17,6 +22,19 @@
     );
 
     h1{
+        z-index: 1;
+        color: white;
         margin: 0px;
+        text-align: center;
+        font-family: 'Spartan', sans-serif;
+        padding-top: 20px;
+        opacity: 1;
+    }
+    .imageHolder{
+        background-image: url('https://media.wired.com/photos/5e618502dd088e00081102a9/2:1/w_2400,h_1200,c_limit/Biz-conference-187591171.jpg');
+        height: 100vh;
+        opacity: 0.5;
+        position: relative;
+        width: 100vw;
     }
 }
