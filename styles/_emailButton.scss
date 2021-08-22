@@ -10,6 +10,16 @@
 
     .EmailButton__container{
         display: flex;
+        p{
+            width:50%;
+            background-color: rgba(0, 0, 0, 0.377);
+            margin-left: 30px;
+        }
     }
 }
 
+#responseValidation{
+    // background-color: rgba(0, 0, 0, 0.377);
+    margin-left: 30px;
+    padding:3px;
+}
