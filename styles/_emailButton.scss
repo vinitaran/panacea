@@ -3,5 +3,13 @@
 
 .emailButton{
     @include flexPosition();
+
+    #input-with-icon-grid-label{
+        color: white;
+    }
+
+    .EmailButton__container{
+        display: flex;
+    }
 }
 
