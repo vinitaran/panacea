@@ -20,8 +20,14 @@ body{
     $flagColor4,
     
     );
+    background: linear-gradient(160deg, #fdcd3b 20%, #ffed4b 20%);
+    background: -webkit-linear-gradient(80deg, $flagColor4  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(70deg, $flagColor3 50%, $flagColor1 0%);
+    background: 
+    conic-gradient(from var(--b) at var(--xy), 
+      var(--c0) var(--a), var(--c1) 0% 50%, 
+      var(--c2) 0% calc(180deg + var(--a)), var(--c3) 0%);
 
-    // background-image:linear-gradient(0deg, $flagColor4, $flagColor3 40%, $flagColor1 80%);
+    background-image:url("../components/Wave-100s-1084px (2).svg");
 
     h1{
         z-index: 1;

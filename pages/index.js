@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import EmailButton from "../components/EmailButton";
 import Logo from "../components/Logo";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+// import SocialMediaIcons from "../components/SocialMediaIcons";
 
 export default function Home() {
 	return (
@@ -13,6 +13,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div className='mainBody'>
+				
 			{/* <div className='imageHolder'>
 			<h1>
 					PAN<span className='aceText'>ACE</span>A
@@ -23,7 +24,7 @@ export default function Home() {
 
 			<img src="https://media.wired.com/photos/5e618502dd088e00081102a9/2:1/w_2400,h_1200,c_limit/Biz-conference-187591171.jpg" />
 				
-			<SocialMediaIcons />	
+			{/* <SocialMediaIcons />	 */}
 			</div>
 		</div>
 	);
