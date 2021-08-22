@@ -10,11 +10,19 @@
 
     .EmailButton__container{
         display: flex;
+<<<<<<< HEAD
 
        
 
         
        
+=======
+        p{
+            width:50%;
+            background-color: rgba(0, 0, 0, 0.377);
+            margin-left: 30px;
+        }
+>>>>>>> ba7b318c86e5ad5106b2e383a578afa509d2ae96
     }
 }
 // #input-with-icon-grid {
@@ -22,6 +30,7 @@
 
 // }
 
+<<<<<<< HEAD
 #input-with-icon-grid-label{
     color:white;
 }
@@ -29,4 +38,10 @@
     color: white;
     width: 200px;
     margin-top:20px ;
+=======
+#responseValidation{
+    // background-color: rgba(0, 0, 0, 0.377);
+    margin-left: 30px;
+    padding:3px;
+>>>>>>> ba7b318c86e5ad5106b2e383a578afa509d2ae96
 }

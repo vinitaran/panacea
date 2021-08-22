@@ -20,7 +20,7 @@ export default function SocialMediaIcons() {
 				</Link>
 			</div>
 			<div>
-				<h4>Organised By Indian Aces</h4>
+				<h4>Organised By <a target="_blank" href="http://indianaces.org/">IndianAces</a></h4>
 			</div>
 		</div>
 	);
