@@ -9,12 +9,13 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
 import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
+import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: 150,
+      width: 100,
     },
     '& label.Mui-focused': {
         color: 'green',
@@ -48,12 +49,13 @@ export default function EmailButton() {
         </Grid>
         <Grid container spacing={1} alignItems="flex-end">
           <Grid item>
-            <AccountCircle />
+            <EmailIcon />
           </Grid>
           <Grid item>
-            <TextField id="input-with-icon-grid" label="Enter Name"  />
+            <TextField id="input-with-icon-grid" label="Enter Email"  />
           </Grid>
         </Grid>
+        <MyButton>Send</MyButton>
       </div>
     </div>
   );
