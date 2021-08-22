@@ -24,18 +24,19 @@ body{
     // background-image:linear-gradient(0deg, $flagColor4, $flagColor3 40%, $flagColor1 80%);
 
     h1{
+        position: absolute;
         z-index: 1;
         color: white;
         margin: 0px;
         text-align: center;
         font-family: 'Spartan', sans-serif;
         padding-top: 20px;
-        opacity: 1;
+        
+    
     }
     .imageHolder{
-        background-image: url('https://media.wired.com/photos/5e618502dd088e00081102a9/2:1/w_2400,h_1200,c_limit/Biz-conference-187591171.jpg');
         height: 100vh;
-        opacity: 0.4;
+       
         position: absolute;
         width: 100vw;
     }
