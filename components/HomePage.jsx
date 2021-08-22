@@ -5,7 +5,7 @@ import SocialMediaIcons from "./SocialMediaIcons";
 const HomePage = () => {
 	return (
 		<div className='home__main'>
-			<div classname='homeTitle'>
+			<div className='homeTitle'>
 				<h1>
 					PAN<span className='aceText'>ACE</span>A
 				</h1>

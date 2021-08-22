@@ -1,6 +1,9 @@
 @import"variables";
 @import"mixins";
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
+head > style:nth-child(24){
+    color: red;
+}
 body{
     margin: 0px;
     color: white
