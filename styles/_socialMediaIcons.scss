@@ -1,0 +1,7 @@
+@import "mixins";
+
+.socialIcons{
+    width: 100px;
+    @include flexPosition();
+    
+}
