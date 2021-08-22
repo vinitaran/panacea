@@ -3,31 +3,59 @@
     // @include flexPosition();
     width: 100vw;
     height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     h1{
         z-index: 1;
         color: white;
         margin: 0px;
         text-align: center;
         font-family: 'Spartan', sans-serif;
-        margin: 20px;      
+        margin: 20px;   
+        font-size: 2.5rem;   
     
     }
+    h4{
+        font-style: italic;
+    }
+    
+    
     
 
 .aceText{
     color: rgb(209, 90, 110);
 }
 .homeTitle{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  
+}
+.homeContent{
+    color: white;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    // @include flexPosition();
+    // flex-direction: column;
+
+    a{
+        color: pink;
+    }
     
 }
 .home__footer{
     @include flexPosition();
     justify-content: space-between;
     margin: 20px;
+    margin: 20px;
+    flex-direction: row;
+    height: 30vh;
  
+}
+#subheading{
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    font-family: 'Spartan', sans-serif;
 }
 
 
