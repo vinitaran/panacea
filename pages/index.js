@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import EmailButton from "../components/EmailButton";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import HomePage from "../components/HomePage";
 
 export default function Home() {
 	return (
@@ -13,7 +11,9 @@ export default function Home() {
 			</Head>
 			<div className='mainBody'>
 			<img src="https://media.wired.com/photos/5e618502dd088e00081102a9/2:1/w_2400,h_1200,c_limit/Biz-conference-187591171.jpg" />
+			<HomePage />
 			</div>
+			
 				
 		</div>
 	);
