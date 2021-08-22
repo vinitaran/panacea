@@ -1,8 +1,9 @@
 @import "mixins";
 
 .socialIcons{
-    width: 100px;
     @include flexPosition();
- margin: 100px;
     
+    svg{
+        margin: 10px;
+    }
 }

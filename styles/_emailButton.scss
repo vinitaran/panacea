@@ -2,8 +2,6 @@
 @import "mixins";
 
 .emailButton{
-    width:100vw;
     @include flexPosition();
-    margin: 100px;
 }
 
