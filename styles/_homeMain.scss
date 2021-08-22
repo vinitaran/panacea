@@ -1,3 +1,36 @@
 .home__main{
     position: absolute;
+    @include flexPosition();
+    width: 100vw;
+    height: inherit;
+    h1{
+        position: absolute;
+        z-index: 1;
+        color: white;
+        margin: 0px;
+        text-align: center;
+        font-family: 'Spartan', sans-serif;
+        padding-top: 20px;
+        top: 5%;
+        
+    
+    }
+    
+
+.aceText{
+    color: rgb(209, 90, 110);
+}
+.homeTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.home__footer{
+    @include flexPosition();
+  position: absolute;
+ 
+}
+
+
 }
