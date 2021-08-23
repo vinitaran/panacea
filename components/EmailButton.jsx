@@ -64,7 +64,8 @@ export default function EmailButton() {
 					color: "white",
 					display: "flex",
 					alignItems: "center",
-					width: "600px",
+					// width: "600px",
+					marginLeft: "10px",
 				}}>
 				<Grid container spacing={1} alignItems='flex-end'>
 					<Grid item>
@@ -95,8 +96,8 @@ export default function EmailButton() {
 					</Grid>
 				</Grid>
 				<MyButton onClick={subscription}>Subscribe</MyButton>
+				<p id='responseValidation' ref={responseMess}></p>
 			</div>
-			<p id='responseValidation' ref={responseMess}></p>
 		</div>
 	);
 }

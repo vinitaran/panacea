@@ -4,9 +4,15 @@
     // width: 100px;
     @include flexPosition();
     flex-direction: column;
+    margin-right: 5px;
     svg{
         margin: 10px;
         cursor: pointer;
     }
 }
 
+@media screen and (max-width: 500px){
+    .socialIcons{
+        width: 100vw;
+    }
+}
