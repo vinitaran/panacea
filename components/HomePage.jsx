@@ -1,13 +1,27 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import EmailButton from "./EmailButton";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 const HomePage = () => {
+	const asiaRef = useRef();
+	const [className1, setClassName1] = useState("aceText");
+
+	setInterval(() => {
+		// console.log(asiaRef.current.className);
+		if(asiaRef.current?.className === "aceText"){
+			setClassName1("asiaText")
+			// console.log(asiaRef.current.className);
+		}else{
+			setClassName1("aceText")
+			// console.log(asiaRef.current.className);
+		}		
+	}, 5000);
+
 	return (
 		<div className='home__main'>
 			<div className='homeTitle'>
 				<h1>
-					PAN<span className='aceText'>ACE</span>A
+					PAN<span className={className1} ref={asiaRef}>{`${className1}` === "aceText" ? "ACE" : "ASI"}</span>A
 				</h1>
 				<h2 id='subheading'>Asexuality Asia Conference 2021</h2>
 			</div>
