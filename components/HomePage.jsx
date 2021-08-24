@@ -6,16 +6,18 @@ const HomePage = () => {
 	const asiaRef = useRef();
 	const [className1, setClassName1] = useState("aceText");
 
-	setInterval(() => {
-		// console.log(asiaRef.current.className);
-		if(asiaRef.current?.className === "aceText"){
-			setClassName1("asiaText")
-			// console.log(asiaRef.current.className);
-		}else{
-			setClassName1("aceText")
-			// console.log(asiaRef.current.className);
-		}		
-	}, 5000);
+	// setInterval(() => {
+	// 	// console.log(asiaRef.current.className);
+	// 	if(asiaRef.current?.className === "aceText"){
+	// 		setClassName1("asiaText")
+	// 		// console.log(asiaRef.current.className);
+	// 	}else{
+	// 		setClassName1("aceText")
+	// 		// console.log(asiaRef.current.className);
+	// 	}		
+	// }, 10000);
+
+	
 
 	return (
 		<div className='home__main'>

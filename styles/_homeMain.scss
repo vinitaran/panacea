@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 .home__main{
     position: absolute;
     // @include flexPosition();
     width: 100vw;
-    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     h1{
         z-index: 1;
         color: white;
         margin: 0px;
         text-align: center;
         font-family: 'Spartan', sans-serif;
+        font-family: 'Roboto Mono', monospace;
         margin: 35px;   
         font-size: 3rem;   
     
@@ -54,6 +56,10 @@
     width: 100vw;
     flex-direction: row;
     align-items: center;
+    @media screen and (max-width: 600px) {
+         flex-direction: column;
+         flex-wrap: wrap;
+    }
  
 }
 #subheading{
@@ -63,14 +69,7 @@
     font-family: 'Spartan', sans-serif;
 }
 .homeTitle{
-    height: 30vh;
 }
 
 
-}
-@media screen and (max-width: 500px) {
-    .home__footer {
-     flex-direction: column;
-     flex-wrap: wrap;
-    }
 }
