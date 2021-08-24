@@ -95,8 +95,14 @@ export default function EmailButton() {
 						/>
 					</Grid>
 				</Grid>
-				<MyButton onClick={subscription}>Subscribe</MyButton>
-				<p id='responseValidation' ref={responseMess}></p>
+				<div className='ButtonHolder'>
+					<div>
+						<MyButton onClick={subscription}>Subscribe</MyButton>
+					</div>
+					<div>
+						<p id='responseValidation' ref={responseMess}></p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

@@ -1,5 +1,6 @@
 *{
-    margin: 0;
+    font-size: calc(7px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    // margin: 0;
 }
 
 @import"variables";
@@ -45,5 +46,10 @@ body{
     height: -webkit-fill-available;
     }
 }
+@media screen and (max-width: 600px){
+    *{
+        font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
 
-
+    
+}
