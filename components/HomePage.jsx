@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
+
 import EmailButton from "./EmailButton";
 import SocialMediaIcons from "./SocialMediaIcons";
+import CountDownTimer from "./CountDownTimer";
 
 const HomePage = () => {
 	const asiaRef = useRef();
@@ -29,12 +31,13 @@ const HomePage = () => {
 				</h1>
 				<h2 id='subheading'>Asexuality Asia Conference 2021</h2>
 			</div>
+			<CountDownTimer />
 			<div className='homeContent'>
 				<h2 id='date'>October 25th - October 31st, 2021</h2>
 				<h3 id='tagLine'>
 					World's first conference dedicated to the asexual community of Asia!
 				</h3>
-				<h4>
+				<h4 id='contact'>
 					Contact for queries, partnerships and collaboration:{" "}
 					<a target='_blank' href='mailto:asexuality.asia@gmail.com'>
 						asexuality.asia@gmail.com
