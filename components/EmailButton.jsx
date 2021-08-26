@@ -58,7 +58,7 @@ export default function EmailButton() {
 
 	return (
 		<div className='EmailButton__container'>
-			<div className="email_form">
+			<div className='email_form'>
 				<Grid container spacing={1} alignItems='flex-end'>
 					<Grid item>
 						<AccountCircle />
@@ -92,7 +92,7 @@ export default function EmailButton() {
 						<MyButton onClick={subscription}>Subscribe</MyButton>
 					</div>
 					<div>
-						<p id='responseValidation' ref={responseMess}>Subscribed</p>
+						<p id='responseValidation' ref={responseMess}></p>
 					</div>
 				</div>
 			</div>

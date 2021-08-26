@@ -6,17 +6,20 @@ const CountdownBox = ({ left, divideBy, label }) => {
     <div className="countdown__box">
       <div className="countdown__box_circles">
         <svg height="110" width="110">
+        
           <circle 
-            stroke="#1df9ba"
+          className='OuterCircle'
+            stroke="#D15A6E"
             strokeWidth="9"
             r="47"
             cx="55"
             cy="55"
           />
           <circle 
-            stroke="#058862"
-            strokeDashoffset={-((left / divideBy) * 47 * 2 * Math.PI) + 47 * 2 * Math.PI}
-            strokeDasharray={47 * 2 * Math.PI}
+          className='InnerCircle'
+            stroke="#000000"
+            strokeDashoffset={-((left / divideBy) * 47* 2 * Math.PI) + 47 * 2 * Math.PI}
+            strokeDasharray={47* 2 * Math.PI}
             strokeWidth="3"
             r="47"
             cx="55"

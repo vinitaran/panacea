@@ -1,63 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 @import "variables";
 
-
-
-
-
 .wrapper {
-    // min-height: 20vh;
-    // padding: 10vh 15px;
-    font:$ff-primary ;
-  }
-  
+	// min-height: 20vh;
+	// padding:  15px;
+	font: $ff-primary;
+}
+
 //   h1 {
 //     font-weight: 300;
 //     text-align: center;
 //     margin-bottom: 5px;
-  
+
 //     span {
 //       display: block;
 //     }
 //   }
-  
-  .countdown {
-    //   width: 90vw;
-    //   min-height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  
-    &__box {
-  
-      svg {
-        position: relative;
-  
-        circle {
-          transform: rotate(-90deg);
-          transform-origin: center;
-          fill: transparent;
-        }
-      }
-  
-      &_circles {
-        position: relative;
-      }
-  
-      &_left {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-weight: 600;
-        font-size: 20px;
-      }
-  
-      &_label {
-        font-size: 14px;
-        font-weight: 300;
-        text-align: center;
-      }
-    }
-  }
+
+.countdown {
+	//   width: 90vw;
+	//   min-height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	@include for-smaller-phones {
+		flex-wrap: nowrap;
+	}
+
+	&__box {
+		svg {
+			@include for-smaller-phones {
+				width: 75px;
+				height: 75px;
+			}
+			position: relative;
+
+			circle {
+				@include for-smaller-phones {
+					r: 20;
+					cx: 70;
+					cy: 37;
+				}
+				transform: rotate(-90deg);
+				transform-origin: center;
+				fill: transparent;
+			}
+		}
+
+		&_circles {
+			position: relative;
+		}
+
+		&_left {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-weight: 600;
+			font-size: 20px;
+		}
+
+		&_label {
+			font-size: 14px;
+			font-weight: 300;
+			text-align: center;
+		}
+	}
+}
+@include for-smaller-phones {
+	.OuterCircle {
+		stroke-width: 6px;
+	}
+	.InnerCircle {
+		stroke-width: 1px;
+	}
+}

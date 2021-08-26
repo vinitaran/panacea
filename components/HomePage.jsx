@@ -35,7 +35,8 @@ const HomePage = () => {
 			<div className='homeContent'>
 				<h2 id='date'>October 25th - October 31st, 2021</h2>
 				<h3 id='tagLine'>
-					World's first conference dedicated to the asexual community of Asia!
+					World's first virtual conference dedicated to the asexual community of
+					Asia!
 				</h3>
 				<h4 id='contact'>
 					Contact for queries, partnerships and collaboration:{" "}
