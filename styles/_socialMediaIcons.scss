@@ -4,16 +4,18 @@
     // width: 100px;
     @include flexPosition();
     flex-direction: column;
-    margin-right: 5px;
     svg{
         margin: 10px;
         cursor: pointer;
     }
-    @media screen and (max-width: 500px){
-        .socialIcons{
-            width: 100vw;
-        }
-}
+    @include for-phone-only {
+        flex-direction: row;
+        width: 95vw;
+        justify-content: space-around;
+    }
+    a{
+        color:#d15a6e;
+    }
 }
 
 

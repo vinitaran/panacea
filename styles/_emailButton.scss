@@ -19,15 +19,14 @@
         }
     }
 }
-// #input-with-icon-grid {
-//     color:red;
-
-// }
 
 #responseValidation{
-    // background-color: rgba(0, 0, 0, 0.377);
-    // margin-left: 30px;
-    padding:3px;
+    text-align: center;
+    padding: 3px;
+    margin-left: 10px;
+    @include for-phone-only {
+        padding:3px 0 3px 0;
+    }
 }
 
 #input-with-icon-grid-label{
@@ -37,4 +36,27 @@
     color: white;
     width: 200px;
     margin-top:20px ;
+}
+
+.email_form{
+    display: flex;
+    align-items: center;
+    @include for-phone-only {
+        flex-direction: column;
+    }
+
+    button{
+        margin-top:10px;
+    }
+
+    p{
+        width:100%
+    }
+    .ButtonHolder{
+        display: flex;
+        @include for-phone-only {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

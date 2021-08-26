@@ -58,15 +58,7 @@ export default function EmailButton() {
 
 	return (
 		<div className='EmailButton__container'>
-			<div
-				className={classes.margin}
-				style={{
-					color: "white",
-					display: "flex",
-					alignItems: "center",
-					// width: "600px",
-					marginLeft: "10px",
-				}}>
+			<div className="email_form">
 				<Grid container spacing={1} alignItems='flex-end'>
 					<Grid item>
 						<AccountCircle />
@@ -100,7 +92,7 @@ export default function EmailButton() {
 						<MyButton onClick={subscription}>Subscribe</MyButton>
 					</div>
 					<div>
-						<p id='responseValidation' ref={responseMess}></p>
+						<p id='responseValidation' ref={responseMess}>Subscribed</p>
 					</div>
 				</div>
 			</div>
