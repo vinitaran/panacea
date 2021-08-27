@@ -31,7 +31,7 @@ const HomePage = () => {
 				</h1>
 				<h2 id='subheading'>Asexuality Asia Conference 2021</h2>
 			</div>
-			<CountDownTimer />
+			{/* <CountDownTimer /> */}
 			<div className='homeContent'>
 				<h2 id='date'>October 25th - October 31st, 2021</h2>
 				<h3 id='tagLine'>
