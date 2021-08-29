@@ -1,0 +1,6 @@
+@import "mixins";
+
+.footer__container{
+   @include flexPosition();
+   justify-content: space-between; 
+}

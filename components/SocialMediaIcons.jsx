@@ -7,16 +7,16 @@ export default function SocialMediaIcons() {
 		<div className='socialIcons'>
 			<div>
 				<Link href='https://www.facebook.com/IndianAces/'>
-					<FaFacebook className='media__icons' />
+					<FaFacebook className='media__icons' size={23}/>
 				</Link>
 				<Link href=''>
-					<FaDiscord className='media__icons' />
+					<FaDiscord className='media__icons' size={23} />
 				</Link>
 				<Link href=''>
-					<FaInstagram className='media__icons' />
+					<FaInstagram className='media__icons' size={23} />
 				</Link>
 				<Link href='https://twitter.com/IndianAces_'>
-					<FaTwitter className='media__icons' />
+					<FaTwitter className='media__icons' size={23} />
 				</Link>
 			</div>
 			<div>

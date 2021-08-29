@@ -5,31 +5,49 @@
     // position: absolute;
     // @include flexPosition();
     // width: 100vw;
+    position: relative; 
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
     h1{
-        z-index: 1;
+        z-index: 10;
         color: white;
         text-align: center;
         font-family: 'Spartan', sans-serif;
         font-family: 'Roboto Mono', monospace;
-        margin: 1.5rem;   
-        font-size: 3rem;   
+        margin: 1rem;   
+        font-size: 3.5rem;   
     
     }
     h4{
         font-style: italic;
+        z-index: 10;
     }
-    
+
+    &::before {    
+        content: "";
+        background-image: url('https://media.wired.com/photos/5e618502dd088e00081102a9/2:1/w_2400,h_1200,c_limit/Biz-conference-187591171.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.4;
+    }
     
     
 
 .aceText{
     color: rgb(209, 90, 110);
-    font-size: 3rem;  
+    font-size: 3.5rem;  
+}
+
+.asiaText{
+    font-size: 3.5rem;  
 }
 
 .homeContent{
@@ -47,6 +65,7 @@
     a{
         color: pink;
     }
+    z-index: 1;
     
 }
 .home__footer{
@@ -60,6 +79,7 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+    z-index: 1;
  
 }
 #subheading{
@@ -67,18 +87,56 @@
     text-align: center;
     color: white;
     font-family: 'Spartan', sans-serif;
+    z-index: 1;
 }
+
 .homeTitle{
+    z-index: 10;
+    
+    span::before{
+        // content: "ACE";
+        content: '';
+        font-size: 3.5rem;
+        animation: animate infinite 8.5s; 
+    }
 }
+
 #date{
     font-size: 1.8rem;
     margin: 1.5rem;
 }
 #tagLine{
     margin: 0px;
+    z-index: 1;
 }
 #contact{
     margin: 1rem;
 }
 
+}
+
+.countDown_wrapper{
+    z-index: 1;
+}
+
+@keyframes animate {
+    0%{
+        content: 'ACE';
+    }
+
+    25%{
+        content: 'ASI';
+    }
+
+    50%{
+        content: 'ACE';
+    }
+
+    75%{
+        content: 'ASI';
+    }
+
+    100%{
+        content: 'ACE';
+    }
 }

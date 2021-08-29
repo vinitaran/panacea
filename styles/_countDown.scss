@@ -5,6 +5,7 @@
 	// min-height: 20vh;
 	// padding:  15px;
 	font: $ff-primary;
+	z-index: 1;
 }
 
 //   h1 {
@@ -39,7 +40,7 @@
 			circle {
 				@include for-smaller-phones {
 					r: 30;
-					cx: 40;
+					cx: 38;
 					cy: 37;
 				}
 				transform: rotate(-90deg);
@@ -62,9 +63,10 @@
 		}
 
 		&_label {
-			font-size: 14px;
+			font-size: 1.5rem;
 			font-weight: 300;
 			text-align: center;
+			margin: 0;
 		}
 	}
 }

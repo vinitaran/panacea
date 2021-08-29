@@ -1,37 +1,40 @@
-import React, { useRef, useState } from "react";
-
+import React, { useRef, useState, useEffect } from "react";
 import EmailButton from "./EmailButton";
 import SocialMediaIcons from "./SocialMediaIcons";
 import CountDownTimer from "./CountDownTimer";
+import {motion} from 'framer-motion';
+
 
 const HomePage = () => {
 	const asiaRef = useRef();
-	const [className1, setClassName1] = useState("aceText");
-
-	// setInterval(() => {
-	// 	// console.log(asiaRef.current.className);
-	// 	if(asiaRef.current?.className === "aceText"){
-	// 		setClassName1("asiaText")
-	// 		// console.log(asiaRef.current.className);
-	// 	}else{
-	// 		setClassName1("aceText")
-	// 		// console.log(asiaRef.current.className);
-	// 	}
-	// }, 10000);
-
 	return (
 		<div className='home__main'>
-			<div className='homeTitle'>
+			<div className='homeTitle'>			
 				<h1>
 					PAN
-					<span className={className1} ref={asiaRef}>
-						ACE
-					</span>
-					A
+				<motion.span
+					style={{ 
+						opacity: 0,
+						marginLeft: -100,
+					}}
+					animate={{
+						opacity: 1,
+						marginLeft: 0,
+					}}
+					transition={{
+						type: "spring",
+						stiffness: 60,
+						yoyo: Infinity,
+						duration: 1.1,
+					}}
+					className='aceText'
+				></motion.span>A
 				</h1>
-				<h2 id='subheading'>Asexuality Asia Conference 2021</h2>
+				{/* <h1>PAN<span className="aceText"></span>A</h1> */}
+				<CountDownTimer />
+				<h2	id='subheading'>Asexuality Asia Conference 2021</h2>
 			</div>
-			{/* <CountDownTimer /> */}
+			
 			<div className='homeContent'>
 				<h2 id='date'>October 25th - October 31st, 2021</h2>
 				<h3 id='tagLine'>
