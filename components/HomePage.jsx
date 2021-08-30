@@ -5,7 +5,7 @@ import CountDownTimer from "./CountDownTimer";
 import { motion } from "framer-motion";
 
 const HomePage = () => {
-	const asiaRef = useRef();
+	// const asiaRef = useRef();
 	return (
 		<div className='home__main'>
 			<div className='homeTitle'>
